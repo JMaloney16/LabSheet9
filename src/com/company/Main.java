@@ -3,19 +3,19 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	    Country lidl = new Country("Lidl", new HighPoint("Bananas", 440));
-        Country tesco = new Country("Tesco", new HighPoint("Apples", 560));
-        Country aldi = new Country("Aldi", new HighPoint("Pears", 12));
-        Country morrisons = new Country("Morrisons", new HighPoint("Oranges", 840));
-        Country sainsburys = new Country("Sainsburys", new HighPoint("Clementines", 350));
-        Continent supermarkets = new Continent("Supermarkets");
-	    supermarkets.addCountry(lidl);
-        supermarkets.addCountry(tesco);
-        supermarkets.addCountry(aldi);
-        supermarkets.addCountry(morrisons);
-        supermarkets.addCountry(sainsburys);
-	    System.out.println(supermarkets.toString());
-        System.out.println(supermarkets.highestCountry());
-        System.out.println(supermarkets.findCountry("Aldi"));
+	    Country uk = new Country("United Kingdom", new HighPoint("Ben Nevis", 1345));
+        Country france = new Country("France", new HighPoint("Mont Blanc", 4810));
+        Country italy = new Country("Italy", new HighPoint("Monte Blanco", 4810));
+        Country germany = new Country("Germany", new HighPoint("Zugspite", 2962));
+        Country sweden = new Country("Sweden", new HighPoint("Kebnekaise", 2097));
+        Continent europe = new Continent("Europe");
+	    europe.addCountry(uk);
+        europe.addCountry(france);
+        europe.addCountry(italy);
+        europe.addCountry(germany);
+        europe.addCountry(sweden);
+	    System.out.println(europe.toString());
+        System.out.println(europe.highestCountry());
+        System.out.println(europe.findCountry("Germany"));
     }
 }

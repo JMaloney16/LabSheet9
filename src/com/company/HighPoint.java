@@ -14,19 +14,10 @@ public class HighPoint {
         return "Highest Point: " + name + "\n" + "Height: " + height;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public int getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
-    }
 }
